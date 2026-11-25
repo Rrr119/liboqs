@@ -1,0 +1,268 @@
+{
+  "tolerance": 0.15,
+  "size_tolerance": 0.02,
+  "overall_pass": true,
+  "worst_deviation": 0.11683661000339451,
+  "algorithms": [
+    {
+      "algorithm": "ML-KEM-768",
+      "present": [
+        true,
+        true
+      ],
+      "size_match": true,
+      "size_differences": [],
+      "actual_size": {
+        "field": "object_actual_bytes",
+        "values": [
+          1088,
+          1088
+        ],
+        "max_relative_deviation": 0.0,
+        "tolerance": 0.02,
+        "pass": true
+      },
+      "operations": [
+        {
+          "operation": "keypair",
+          "medians_ops_per_sec": [
+            170912.581386,
+            192120.349891
+          ],
+          "max_relative_deviation": 0.11683661000339451,
+          "tolerance": 0.15,
+          "pass": true
+        },
+        {
+          "operation": "encaps",
+          "medians_ops_per_sec": [
+            177152.452303,
+            181984.114688
+          ],
+          "max_relative_deviation": 0.026907103475882398,
+          "tolerance": 0.15,
+          "pass": true
+        },
+        {
+          "operation": "decaps",
+          "medians_ops_per_sec": [
+            148139.652943,
+            151127.468659
+          ],
+          "max_relative_deviation": 0.019967550728633363,
+          "tolerance": 0.15,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "algorithm": "ML-KEM-1024",
+      "present": [
+        true,
+        true
+      ],
+      "size_match": true,
+      "size_differences": [],
+      "actual_size": {
+        "field": "object_actual_bytes",
+        "values": [
+          1568,
+          1568
+        ],
+        "max_relative_deviation": 0.0,
+        "tolerance": 0.02,
+        "pass": true
+      },
+      "operations": [
+        {
+          "operation": "keypair",
+          "medians_ops_per_sec": [
+            143711.265542,
+            148165.792675
+          ],
+          "max_relative_deviation": 0.030523311151698786,
+          "tolerance": 0.15,
+          "pass": true
+        },
+        {
+          "operation": "encaps",
+          "medians_ops_per_sec": [
+            137992.33782,
+            135759.23643
+          ],
+          "max_relative_deviation": 0.016314802178712926,
+          "tolerance": 0.15,
+          "pass": true
+        },
+        {
+          "operation": "decaps",
+          "medians_ops_per_sec": [
+            110251.170524,
+            111556.345426
+          ],
+          "max_relative_deviation": 0.011768536304190993,
+          "tolerance": 0.15,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "algorithm": "ML-DSA-65",
+      "present": [
+        true,
+        true
+      ],
+      "size_match": true,
+      "size_differences": [],
+      "actual_size": {
+        "field": "object_actual_bytes",
+        "values": [
+          3309,
+          3309
+        ],
+        "max_relative_deviation": 0.0,
+        "tolerance": 0.02,
+        "pass": true
+      },
+      "operations": [
+        {
+          "operation": "keypair",
+          "medians_ops_per_sec": [
+            59243.890304,
+            59019.467058
+          ],
+          "max_relative_deviation": 0.003795313290710101,
+          "tolerance": 0.15,
+          "pass": true
+        },
+        {
+          "operation": "sign",
+          "medians_ops_per_sec": [
+            18267.459548,
+            18331.331477
+          ],
+          "max_relative_deviation": 0.0034903846390101252,
+          "tolerance": 0.15,
+          "pass": true
+        },
+        {
+          "operation": "verify",
+          "medians_ops_per_sec": [
+            59375.495898,
+            59224.392954
+          ],
+          "max_relative_deviation": 0.0025481127421385485,
+          "tolerance": 0.15,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "algorithm": "Falcon-512",
+      "present": [
+        true,
+        true
+      ],
+      "size_match": true,
+      "size_differences": [],
+      "actual_size": {
+        "field": "object_actual_bytes",
+        "values": [
+          658,
+          656
+        ],
+        "max_relative_deviation": 0.0030441400304414,
+        "tolerance": 0.02,
+        "pass": true
+      },
+      "operations": [
+        {
+          "operation": "keypair",
+          "medians_ops_per_sec": [
+            273.509342,
+            269.560198
+          ],
+          "max_relative_deviation": 0.014543787523049037,
+          "tolerance": 0.15,
+          "pass": true
+        },
+        {
+          "operation": "sign",
+          "medians_ops_per_sec": [
+            9370.373664,
+            9480.19042
+          ],
+          "max_relative_deviation": 0.01165129653528093,
+          "tolerance": 0.15,
+          "pass": true
+        },
+        {
+          "operation": "verify",
+          "medians_ops_per_sec": [
+            47942.690319,
+            47496.68248
+          ],
+          "max_relative_deviation": 0.00934641177785844,
+          "tolerance": 0.15,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "algorithm": "SLH_DSA_PURE_SHA2_128F",
+      "present": [
+        true,
+        true
+      ],
+      "size_match": true,
+      "size_differences": [],
+      "actual_size": {
+        "field": "object_actual_bytes",
+        "values": [
+          17088,
+          17088
+        ],
+        "max_relative_deviation": 0.0,
+        "tolerance": 0.02,
+        "pass": true
+      },
+      "operations": [
+        {
+          "operation": "keypair",
+          "medians_ops_per_sec": [
+            1978.110416,
+            2022.618213
+          ],
+          "max_relative_deviation": 0.022249845529325442,
+          "tolerance": 0.15,
+          "pass": true
+        },
+        {
+          "operation": "sign",
+          "medians_ops_per_sec": [
+            86.224216,
+            79.650858
+          ],
+          "max_relative_deviation": 0.07925673027883623,
+          "tolerance": 0.15,
+          "pass": true
+        },
+        {
+          "operation": "verify",
+          "medians_ops_per_sec": [
+            1413.225784,
+            1373.795356
+          ],
+          "max_relative_deviation": 0.028295750924946263,
+          "tolerance": 0.15,
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+algorithm,kind,nist_level,public_key_bytes,secret_key_bytes,object_bytes,keygen_ops_per_sec,action_operation,action_ops_per_sec,verify_or_decaps_operation,verify_or_decaps_ops_per_sec,keygen_us_per_op,action_us_per_op,verify_or_decaps_us_per_op,action_MB_per_s,verify_or_decaps_MB_per_s
+ML-KEM-768,kem,3,1184,2400,1088,181516.466,encaps,179568.283,decaps,149633.561,5.5091,5.5689,6.6830,195.370,162.801
+ML-KEM-1024,kem,5,1568,3168,1568,145938.529,encaps,136875.787,decaps,110903.758,6.8522,7.3059,9.0168,214.621,173.897
+ML-DSA-65,sig,3,1952,4032,3309,59131.679,sign,18299.396,verify,59299.944,16.9114,54.6466,16.8634,60.553,196.224
+Falcon-512,sig,1,897,1281,658,271.535,sign,9425.282,verify,47719.686,3682.7696,106.0976,20.9557,6.202,31.400
+SLH_DSA_PURE_SHA2_128F,sig,1,32,64,17088,2000.364,sign,82.938,verify,1393.511,499.9089,12057.2667,717.6121,1.417,23.812

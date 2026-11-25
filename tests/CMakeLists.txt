@@ -105,6 +105,9 @@ target_link_libraries(speed_kem PRIVATE ${TEST_DEPS})
 
 set(KEM_TESTS example_kem kat_kem test_kem test_kem_mem speed_kem vectors_kem)
 
+# Unified benchmark framework (KEM + SIG): sizes and throughput in one schema.
+add_executable(bench_unified bench_unified.c bench_framework.c)
+target_link_libraries(bench_unified PRIVATE ${TEST_DEPS})
 
 # SIG API tests
 add_executable(example_sig example_sig.c)
@@ -246,7 +249,7 @@ if (CMAKE_GENERATOR MATCHES "Visual Studio")
     # With Visual studio the output of tests go into a folder with the configuration option. Force it to the same folder as if
     # generating with Ninja
     set_target_properties(
-        dump_alg_info example_sig_stfl ${KEM_TESTS} ${SIG_TESTS} ${SIG_STFL_TESTS}
+        dump_alg_info example_sig_stfl bench_unified ${KEM_TESTS} ${SIG_TESTS} ${SIG_STFL_TESTS}
         PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY_DEBUG          "${CMAKE_BINARY_DIR}/tests"
         RUNTIME_OUTPUT_DIRECTORY_RELEASE        "${CMAKE_BINARY_DIR}/tests"

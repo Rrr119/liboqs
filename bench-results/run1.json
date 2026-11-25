@@ -1,0 +1,541 @@
+{
+  "schema_version": 1,
+  "tool": "bench_unified",
+  "generated_utc": "2026-11-25T22:32:42Z",
+  "timer": "bench_time_ns: monotonic nanosecond clock (CLOCK_MONOTONIC/QPC)",
+  "parameters": {
+    "iterations": 0,
+    "iteration_mode": "adaptive",
+    "batch_target_ms": 50,
+    "warmup": 8,
+    "repeats": 7,
+    "message_bytes": 64
+  },
+  "results": [
+    {
+      "algorithm": "ML-KEM-768",
+      "kind": "kem",
+      "nist_level": 3,
+      "ind_cca": true,
+      "sizes": {
+        "public_key_bytes": 1184,
+        "secret_key_bytes": 2400,
+        "object_max_bytes": 1088,
+        "object_actual_bytes": 1088,
+        "shared_secret_bytes": 32
+      },
+      "operations": {
+        "keypair": {
+          "iterations": 16384,
+          "payload_bytes_per_op": 3584,
+          "median_ops_per_sec": 170912.581386,
+          "median_us_per_op": 5.850944,
+          "median_mb_per_s": 612.550692,
+          "mean_ops_per_sec": 173359.929161,
+          "stdev_ops_per_sec": 8964.78079,
+          "cv_percent": 5.171195,
+          "min_ops_per_sec": 166979.585227,
+          "max_ops_per_sec": 192886.402682,
+          "samples_ops_per_sec": [
+            168992.238755,
+            166979.585227,
+            173808.658287,
+            172415.549424,
+            167524.488365,
+            170912.581386,
+            192886.402682
+          ],
+          "samples_elapsed_ns": [
+            96951198,
+            98119779,
+            94264579,
+            95026232,
+            97800627,
+            95861872,
+            84941187
+          ]
+        },
+        "encaps": {
+          "iterations": 16384,
+          "payload_bytes_per_op": 1088,
+          "median_ops_per_sec": 177152.452303,
+          "median_us_per_op": 5.644856,
+          "median_mb_per_s": 192.741868,
+          "mean_ops_per_sec": 177230.931402,
+          "stdev_ops_per_sec": 2449.693639,
+          "cv_percent": 1.382204,
+          "min_ops_per_sec": 172496.649481,
+          "max_ops_per_sec": 179702.477891,
+          "samples_ops_per_sec": [
+            172496.649481,
+            179167.817541,
+            176812.184872,
+            178909.801593,
+            179702.477891,
+            176375.136135,
+            177152.452303
+          ],
+          "samples_elapsed_ns": [
+            94981555,
+            91444994,
+            92663297,
+            91576872,
+            91172922,
+            92892912,
+            92485313
+          ]
+        },
+        "decaps": {
+          "iterations": 8192,
+          "payload_bytes_per_op": 1088,
+          "median_ops_per_sec": 148139.652943,
+          "median_us_per_op": 6.750387,
+          "median_mb_per_s": 161.175942,
+          "mean_ops_per_sec": 147924.765133,
+          "stdev_ops_per_sec": 1325.523174,
+          "cv_percent": 0.896079,
+          "min_ops_per_sec": 145759.984052,
+          "max_ops_per_sec": 149320.408952,
+          "samples_ops_per_sec": [
+            148875.593996,
+            148901.839843,
+            149320.408952,
+            147965.805232,
+            148139.652943,
+            145759.984052,
+            146510.070913
+          ],
+          "samples_elapsed_ns": [
+            55025809,
+            55016110,
+            54861891,
+            55364143,
+            55299171,
+            56201982,
+            55914245
+          ]
+        }
+      }
+    },
+    {
+      "algorithm": "ML-KEM-1024",
+      "kind": "kem",
+      "nist_level": 5,
+      "ind_cca": true,
+      "sizes": {
+        "public_key_bytes": 1568,
+        "secret_key_bytes": 3168,
+        "object_max_bytes": 1568,
+        "object_actual_bytes": 1568,
+        "shared_secret_bytes": 32
+      },
+      "operations": {
+        "keypair": {
+          "iterations": 8192,
+          "payload_bytes_per_op": 4736,
+          "median_ops_per_sec": 143711.265542,
+          "median_us_per_op": 6.958397,
+          "median_mb_per_s": 680.616554,
+          "mean_ops_per_sec": 142735.439349,
+          "stdev_ops_per_sec": 3266.688382,
+          "cv_percent": 2.288632,
+          "min_ops_per_sec": 135569.136263,
+          "max_ops_per_sec": 145423.95788,
+          "samples_ops_per_sec": [
+            135569.136263,
+            143711.265542,
+            144233.615074,
+            144107.034656,
+            143339.295714,
+            142763.770312,
+            145423.95788
+          ],
+          "samples_elapsed_ns": [
+            60426733,
+            57003186,
+            56796746,
+            56846635,
+            57151111,
+            57381505,
+            56331846
+          ]
+        },
+        "encaps": {
+          "iterations": 8192,
+          "payload_bytes_per_op": 1568,
+          "median_ops_per_sec": 137992.33782,
+          "median_us_per_op": 7.246779,
+          "median_mb_per_s": 216.371986,
+          "mean_ops_per_sec": 137365.757979,
+          "stdev_ops_per_sec": 1653.431656,
+          "cv_percent": 1.203671,
+          "min_ops_per_sec": 134839.129117,
+          "max_ops_per_sec": 139641.173323,
+          "samples_ops_per_sec": [
+            138537.403873,
+            139641.173323,
+            136488.453655,
+            137992.33782,
+            136010.51797,
+            134839.129117,
+            138051.290099
+          ],
+          "samples_elapsed_ns": [
+            59132045,
+            58664646,
+            60019729,
+            59365615,
+            60230636,
+            60753878,
+            59340264
+          ]
+        },
+        "decaps": {
+          "iterations": 8192,
+          "payload_bytes_per_op": 1568,
+          "median_ops_per_sec": 110251.170524,
+          "median_us_per_op": 9.070198,
+          "median_mb_per_s": 172.873835,
+          "mean_ops_per_sec": 107878.193471,
+          "stdev_ops_per_sec": 6562.965884,
+          "cv_percent": 6.083682,
+          "min_ops_per_sec": 93653.045533,
+          "max_ops_per_sec": 112406.482698,
+          "samples_ops_per_sec": [
+            107852.527678,
+            107508.020516,
+            110251.170524,
+            111805.661016,
+            93653.045533,
+            112406.482698,
+            111670.446336
+          ],
+          "samples_elapsed_ns": [
+            75955568,
+            76198966,
+            74303066,
+            73269993,
+            87471795,
+            72878359,
+            73358711
+          ]
+        }
+      }
+    },
+    {
+      "algorithm": "ML-DSA-65",
+      "kind": "sig",
+      "nist_level": 3,
+      "ind_cca": null,
+      "sizes": {
+        "public_key_bytes": 1952,
+        "secret_key_bytes": 4032,
+        "object_max_bytes": 3309,
+        "object_actual_bytes": 3309,
+        "shared_secret_bytes": 0
+      },
+      "operations": {
+        "keypair": {
+          "iterations": 4096,
+          "payload_bytes_per_op": 5984,
+          "median_ops_per_sec": 59243.890304,
+          "median_us_per_op": 16.879378,
+          "median_mb_per_s": 354.51544,
+          "mean_ops_per_sec": 58958.144614,
+          "stdev_ops_per_sec": 1183.940325,
+          "cv_percent": 2.008103,
+          "min_ops_per_sec": 57194.203462,
+          "max_ops_per_sec": 60456.83374,
+          "samples_ops_per_sec": [
+            59243.890304,
+            59341.024013,
+            57770.7742,
+            60094.222929,
+            57194.203462,
+            58606.063647,
+            60456.83374
+          ],
+          "samples_elapsed_ns": [
+            69137931,
+            69024761,
+            70900902,
+            68159630,
+            71615649,
+            69890379,
+            67750819
+          ]
+        },
+        "sign": {
+          "iterations": 1024,
+          "payload_bytes_per_op": 3309,
+          "median_ops_per_sec": 18267.459548,
+          "median_us_per_op": 54.742149,
+          "median_mb_per_s": 60.447024,
+          "mean_ops_per_sec": 18261.507022,
+          "stdev_ops_per_sec": 140.040186,
+          "cv_percent": 0.76686,
+          "min_ops_per_sec": 18080.63756,
+          "max_ops_per_sec": 18460.041689,
+          "samples_ops_per_sec": [
+            18267.459548,
+            18368.012494,
+            18114.355715,
+            18460.041689,
+            18191.406784,
+            18348.635361,
+            18080.63756
+          ],
+          "samples_elapsed_ns": [
+            56055961,
+            55749091,
+            56529750,
+            55471164,
+            56290314,
+            55807965,
+            56635171
+          ]
+        },
+        "verify": {
+          "iterations": 4096,
+          "payload_bytes_per_op": 3309,
+          "median_ops_per_sec": 59375.495898,
+          "median_us_per_op": 16.841965,
+          "median_mb_per_s": 196.473516,
+          "mean_ops_per_sec": 59220.70108,
+          "stdev_ops_per_sec": 661.789199,
+          "cv_percent": 1.117496,
+          "min_ops_per_sec": 58429.525341,
+          "max_ops_per_sec": 60030.473673,
+          "samples_ops_per_sec": [
+            60030.473673,
+            58655.118329,
+            58596.691078,
+            59375.495898,
+            59948.497859,
+            58429.525341,
+            59509.10538
+          ],
+          "samples_elapsed_ns": [
+            68232012,
+            69831928,
+            69901558,
+            68984687,
+            68325315,
+            70101545,
+            68829803
+          ]
+        }
+      }
+    },
+    {
+      "algorithm": "Falcon-512",
+      "kind": "sig",
+      "nist_level": 1,
+      "ind_cca": null,
+      "sizes": {
+        "public_key_bytes": 897,
+        "secret_key_bytes": 1281,
+        "object_max_bytes": 752,
+        "object_actual_bytes": 658,
+        "shared_secret_bytes": 0
+      },
+      "operations": {
+        "keypair": {
+          "iterations": 16,
+          "payload_bytes_per_op": 2178,
+          "median_ops_per_sec": 273.509342,
+          "median_us_per_op": 3656.18225,
+          "median_mb_per_s": 0.595703,
+          "mean_ops_per_sec": 276.674941,
+          "stdev_ops_per_sec": 14.869609,
+          "cv_percent": 5.374397,
+          "min_ops_per_sec": 252.070606,
+          "max_ops_per_sec": 295.75882,
+          "samples_ops_per_sec": [
+            273.509342,
+            290.181174,
+            295.75882,
+            252.070606,
+            273.431008,
+            284.629218,
+            267.144419
+          ],
+          "samples_elapsed_ns": [
+            58498916,
+            55137967,
+            54098133,
+            63474279,
+            58515675,
+            56213484,
+            59892698
+          ]
+        },
+        "sign": {
+          "iterations": 512,
+          "payload_bytes_per_op": 658,
+          "median_ops_per_sec": 9370.373664,
+          "median_us_per_op": 106.71933,
+          "median_mb_per_s": 6.165706,
+          "mean_ops_per_sec": 9398.59924,
+          "stdev_ops_per_sec": 113.117965,
+          "cv_percent": 1.203562,
+          "min_ops_per_sec": 9261.059686,
+          "max_ops_per_sec": 9560.53471,
+          "samples_ops_per_sec": [
+            9531.634826,
+            9370.373664,
+            9418.014528,
+            9261.059686,
+            9294.98349,
+            9353.593778,
+            9560.53471
+          ],
+          "samples_elapsed_ns": [
+            53715864,
+            54640297,
+            54363900,
+            55285250,
+            55083476,
+            54738319,
+            53553490
+          ]
+        },
+        "verify": {
+          "iterations": 4096,
+          "payload_bytes_per_op": 658,
+          "median_ops_per_sec": 47942.690319,
+          "median_us_per_op": 20.858237,
+          "median_mb_per_s": 31.54629,
+          "mean_ops_per_sec": 47612.100906,
+          "stdev_ops_per_sec": 1020.020145,
+          "cv_percent": 2.142355,
+          "min_ops_per_sec": 45408.306705,
+          "max_ops_per_sec": 48270.82611,
+          "samples_ops_per_sec": [
+            48270.82611,
+            45408.306705,
+            47847.358329,
+            48199.162895,
+            48235.876451,
+            47380.48553,
+            47942.690319
+          ],
+          "samples_elapsed_ns": [
+            84854566,
+            90203760,
+            85605562,
+            84980729,
+            84916048,
+            86449093,
+            85435339
+          ]
+        }
+      }
+    },
+    {
+      "algorithm": "SLH_DSA_PURE_SHA2_128F",
+      "kind": "sig",
+      "nist_level": 1,
+      "ind_cca": null,
+      "sizes": {
+        "public_key_bytes": 32,
+        "secret_key_bytes": 64,
+        "object_max_bytes": 17088,
+        "object_actual_bytes": 17088,
+        "shared_secret_bytes": 0
+      },
+      "operations": {
+        "keypair": {
+          "iterations": 128,
+          "payload_bytes_per_op": 96,
+          "median_ops_per_sec": 1978.110416,
+          "median_us_per_op": 505.532953,
+          "median_mb_per_s": 0.189899,
+          "mean_ops_per_sec": 1929.510157,
+          "stdev_ops_per_sec": 113.929109,
+          "cv_percent": 5.904561,
+          "min_ops_per_sec": 1680.011669,
+          "max_ops_per_sec": 2000.317457,
+          "samples_ops_per_sec": [
+            1986.055593,
+            1990.487739,
+            1680.011669,
+            2000.317457,
+            1978.110416,
+            1960.886623,
+            1910.701599
+          ],
+          "samples_elapsed_ns": [
+            64449354,
+            64305847,
+            76189947,
+            63989843,
+            64708218,
+            65276594,
+            66991099
+          ]
+        },
+        "sign": {
+          "iterations": 8,
+          "payload_bytes_per_op": 17088,
+          "median_ops_per_sec": 86.224216,
+          "median_us_per_op": 11597.67,
+          "median_mb_per_s": 1.473399,
+          "mean_ops_per_sec": 85.658642,
+          "stdev_ops_per_sec": 1.617769,
+          "cv_percent": 1.888624,
+          "min_ops_per_sec": 83.213774,
+          "max_ops_per_sec": 87.621871,
+          "samples_ops_per_sec": [
+            86.224216,
+            85.404271,
+            87.621871,
+            86.541411,
+            86.794763,
+            83.810185,
+            83.213774
+          ],
+          "samples_elapsed_ns": [
+            92781360,
+            93672130,
+            91301406,
+            92441294,
+            92171460,
+            95453792,
+            96137930
+          ]
+        },
+        "verify": {
+          "iterations": 128,
+          "payload_bytes_per_op": 17088,
+          "median_ops_per_sec": 1413.225784,
+          "median_us_per_op": 707.601016,
+          "median_mb_per_s": 24.149202,
+          "mean_ops_per_sec": 1383.337923,
+          "stdev_ops_per_sec": 89.556093,
+          "cv_percent": 6.473913,
+          "min_ops_per_sec": 1180.978333,
+          "max_ops_per_sec": 1429.556051,
+          "samples_ops_per_sec": [
+            1429.556051,
+            1422.085133,
+            1405.644025,
+            1412.895667,
+            1418.980467,
+            1413.225784,
+            1180.978333
+          ],
+          "samples_elapsed_ns": [
+            89538287,
+            90008676,
+            91061462,
+            90594092,
+            90205611,
+            90572930,
+            108384715
+          ]
+        }
+      }
+    }
+  ]
+}

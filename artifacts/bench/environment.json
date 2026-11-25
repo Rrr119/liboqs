@@ -1,0 +1,31 @@
+{
+  "captured_utc": "2026-11-25T22:32:32Z",
+  "hostname": "zqzl1020",
+  "system": "Linux",
+  "release": "6.18.58.1-microsoft-standard-WSL2",
+  "machine": "x86_64",
+  "platform": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "python": "3.14.4",
+  "cpu_model": "AMD Ryzen 7 9700X 8-Core Processor",
+  "logical_cpus": 16,
+  "pinned_cpu": "4",
+  "binary": "/home/dev/feedback/uid38845/build/tests/bench_unified",
+  "binary_sha256": "a9211812c05b17996687eed34d2815bde8c0f2e4ea8678259c028a467ca28aaf",
+  "git_commit": "c94f141946729891d251a3fdad0c0016ab1e9e28",
+  "parameters": {
+    "algorithms": [
+      "ML-KEM-768",
+      "ML-KEM-1024",
+      "ML-DSA-65",
+      "Falcon-512",
+      "SLH_DSA_PURE_SHA2_128F"
+    ],
+    "iterations": 0,
+    "batch_ms": 50,
+    "warmup": 8,
+    "repeats": 7,
+    "runs": 2
+  },
+  "chosen_attempt": 1,
+  "attempts": 10
+}

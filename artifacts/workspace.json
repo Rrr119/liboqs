@@ -1,0 +1,17 @@
+{
+  "root": "/home/dev/feedback/uid38845",
+  "B": "/home/dev/feedback/uid38845",
+  "sha": "c94f141946729891d251a3fdad0c0016ab1e9e28",
+  "wslDistro": "Ubuntu-26.04",
+  "source": {
+    "owner": "open-quantum-safe",
+    "repo": "liboqs",
+    "sha": "c94f141946729891d251a3fdad0c0016ab1e9e28"
+  },
+  "fork": {
+    "owner": "Rrr119",
+    "repo": "liboqs",
+    "cloneUrl": "https://github.com/Rrr119/liboqs.git"
+  },
+  "at": "2026-11-25T21:39:59.194Z"
+}

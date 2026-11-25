@@ -51,6 +51,7 @@ SUITES = {
         "test_kat.py",
         "test_binary.py",
         "test_alg_info.py",
+        "test_bench_unified.py",
         "test_hash.py::test_aes",
         "test_hash.py::test_sha3",
     ],
